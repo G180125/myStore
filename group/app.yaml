@@ -1,0 +1,50 @@
+runtime: php55
+api_version: 1
+handlers:
+- url: /signin
+  script: login/signin.php
+
+- url: /signup
+  script: login/signup.php
+
+- url: /(.+\.php)$
+  script: \1
+
+- url: /staff
+  script: staff/staff.php
+
+- url: /create
+  script: staff/create.php
+
+- url: /update
+  script: staff/update.php
+
+- url: /delete
+  script: staff/delete.php
+
+- url: /staffProduct
+  script: staff/staffProduct.php
+
+- url: /user
+  script: staff/user.php
+
+- url: /order
+  script: staff/order.php
+
+- url: /home
+  script: user/index.php
+  
+- url: /product
+  script: user/product.php
+
+- url: /profile
+  script: user/profile.php
+
+- url: /viewCart
+  script: user/viewCart.php
+
+- url: /checkOut
+  script: user/checkOut.php
+
+- url: /complete
+  script: user/complete.php
